@@ -1,0 +1,48 @@
+﻿body {
+    display: flexbox;
+    min-height: 100vh;
+    flex-direction: column;
+    min-width:600px;
+    background-color:#eceff1;
+  }
+
+ #main {
+    min-height:75vh;
+  }
+footer {
+    min-height:25vh;
+}
+.logo-img {    margin-left: 14px;
+    margin-top: 25px;
+}
+.title {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#lbContactList {
+    width:330px;
+}
+td.customerList {
+    width:350px;
+}
+.buttonSizeFix {
+    min-width:156px;
+}
+i.home-icon {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 56px;
+    width: 100px;
+    height: 100px;
+    line-height: 96px;
+    vertical-align: middle;
+    text-align: center;
+    background-color:#00796b;
+    color:white;
+}
+.marg5 {
+    margin: 5px;
+}
+same-hight {
+    height: inherit;
+}

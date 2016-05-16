@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta name="author" content="Iwona Pawluk, Joe Zipeto, Bahman Yaghoubi Vije" />
+    <meta name="description" content="This is the customer C# aspx file. this is where we code the database to the
+                         				the program based on the drop down list selection" />
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="App_Theme/materialize/css/materialize.min.css" media="screen,projection" />
+    <link href="App_Theme/materialize/css/materialize.min.css" rel="stylesheet" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link href="App_Theme/SportsPro1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="main" class="container">
+        <form id="form1" runat="server">
+            <div>
+                <nav class="blue-grey darken-4">
+                    <div class="nav-wrapper">
+                        <a href="Default.aspx">
+                            <img class="brand-logo " src="App_Images/SportsProLogo3.png" /></a>
+                        <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                        
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="Default.aspx">Home</a></li>
+                            <li><a href="Customers.aspx">Customers</a></li>
+                            <li><a href="Surveys.aspx">Surveys</a></li>
+                            <li><a class="dropdown-button" href="#!" data-activates="dropdown-side">Maintenance<i class="material-icons right">arrow_drop_down</i></a></li>
+                            <li><a href="Contactlist.aspx">Contact</a></li>
+                        </ul>
+                        <ul id="dropdown-side" class="dropdown-content">
+                            <li><a href="ProductsAdmin.aspx">Products</a></li>
+                            <li><a href="CustomersAdmin.aspx">Customers</a></li>
+                       </ul>
+                        <ul id="mobile" class="side-nav">
+                            <li><a href="Default.aspx">Home</a></li>
+                            <li><a href="Customers.aspx">Customers</a></li>
+                            <li><a href="Surveys.aspx">Surveys</a></li>
+                            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Maintenance<i class="material-icons right">arrow_drop_down</i></a></li>
+                            <li><a href="Contactlist.aspx">Contact</a></li>
+                        </ul>
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="ProductsAdmin.aspx">Products</a></li>
+                            <li><a href="CustomersAdmin.aspx">Customers</a></li>
+                       </ul>
+                    </div>
+                </nav>
+                <section>
+                     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </section>
+            </div>
+        </form>
+    </div>
+
+
+
+
+     <footer class="page-footer blue-grey darken-4">
+        <div class="container white-text">
+            <h5>
+                <asp:Label ID="Label10" class="lblH2" runat="server" Text="Group Members:"></asp:Label></h5>
+            <ul>
+                <li>Iwona Pawluk - 100967879</li>
+                <li>Bahman Yaghoubi Vije - 100968843</li>
+                <li>Joe Zipeto - 100963441</li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">© 2016 Copyright SportsPro</div>
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/materialize/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".button-collapse").sideNav();
+        });
+    </script>
+</body>
+</html>
